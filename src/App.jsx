@@ -1,10 +1,9 @@
-import React from "react"
-import Sidebar from "./components/sidebar"
-import Editor from "./components/editor"
-import Split from "react-split"
-import {nanoid} from "nanoid"
 import "./style.css"
-
+import React from "react"
+import Sidebar from "./components/Sidebar"
+import Editor from "./components/Editor"
+import Split from "react-split"
+import { nanoid } from "nanoid"
 
 export default function App() {
     const [notes, setNotes] = React.useState(
