@@ -1,11 +1,10 @@
 
-# <Sidebar
-notes={notes}
-currentNote={currentNote}
-setCurrentNoteId={setCurrentNoteId}
-newNote={createNewNote}
-deleteNote={deleteNote}
-/>
+# Sidebar
+* notes={notes}
+* currentNote={currentNote}
+* setCurrentNoteId={setCurrentNoteId}
+* newNote={createNewNote}
+* deleteNote={deleteNote}
 
 ## function Sidebar(props) {const noteElements = props.notes.map((note, index) => ()
 
