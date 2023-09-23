@@ -6,7 +6,8 @@
 * newNote={createNewNote}
 * deleteNote={deleteNote}
 
-## function Sidebar(props) {const noteElements = props.notes.map((note, index) => ()
+## function Sidebar(props) 
+###{const noteElements = props.notes.map((note, index) => ()
 
 * props: In the example you provided, the Sidebar component uses props to receive the notes and currentNote data from its parent component. This allows the Sidebar component to render a list of notes, with the current note highlighted, without having to know how the data is being managed.
 
