@@ -26,11 +26,15 @@
 
 
 
-## c) return ()
+## c) Return ()
   * button,onClick: ={props.newNote}
 
 
 # 2. Editor Component
+* currentNoteId && notes.length :
+* currentNote={currentNote} : 
+* updateNote={updateNote} : 
+
 
 ## 2.1) Imports: 
 * ReactMde from "react-mde": ReactMde is a React Markdown editor component, a simple yet powerful and extensible component that can be used to create rich Markdown editors in React applications.
@@ -51,15 +55,38 @@
   * strikethrough: true: 
   * tasklists: true:
 
-## 2.4) ReactMde
+## 2.4) Return ReactMde
 * value={currentNote.body} : 
 * onChange={updateNote} : 
 * selectedTab={selectedTab} : 
 * onTabChange={setSelectedTab} : 
 * generateMarkdownPreview={(markdown) => Promise.resolve(converter.makeHtml(markdown))} : 
 * minEditorHeight={80} : 
-* heightUnits="vh" : 
-        
+* heightUnits="vh" :
+
+
+# 3. App.js
+
+## 3.1) Imports
+* Split from "react-split" :
+* { nanoid } from "nanoid" :
+* import {Sidebar,Editor} from "./components/Sidebar":
+
+## 3.2) function App() {}
+  * const [notes, setNotes] = React.useState(() => JSON.parse(localStorage.getItem("notes")) || []) :
+  * const [currentNoteId, setCurrentNoteId] = React.useState( notes[0]?.id) || "") : 
+  * const currentNote = notes.find(note => note.id === currentNoteId) || notes[0] :
+  * React.useEffect(() => {localStorage.setItem("notes", JSON.stringify(notes))}, [notes]) :
+
+## 3.3 Functions
+* function createNewNote()
+* function updateNote(text)
+* function deleteNote(event, noteId)
+
+## 3.4 Return 
+* onClick={createNewNote} :
+* Split : 
+                    >
 
 
 
