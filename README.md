@@ -7,9 +7,11 @@ The Notes App is a modern web application built with React JS, designed to help 
 ## Demo
 
 You can try out a live demo of this project [here](https://notes-by-vishu.netlify.app/).
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <img src="https://raw.githubusercontent.com/Vishu-221b/Note-Maker/main/Screenshot%20(350).png" style="width: 48%; max-height: 225px;" alt="Notes App">
+    <img src="https://raw.githubusercontent.com/Vishu-221b/Note-Maker/main/Screenshot%20(351).png" style="width: 48%; max-height: 225px;" alt="Notes App">
+</div>
 
-![Notes App](https://raw.githubusercontent.com/Vishu-221b/Note-Maker/main/Screenshot%20(350).png)
-![Notes App](https://raw.githubusercontent.com/Vishu-221b/Note-Maker/main/Screenshot%20(351).png)
 
 ## Table of Contents
 
