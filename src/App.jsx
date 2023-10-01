@@ -84,7 +84,7 @@ export default function App() {
                             className="first-note"
                             onClick={createNewNote}
                         >
-                            Create one now blehh
+                            Create one now hehe
                 </button>
                     </div>
 
