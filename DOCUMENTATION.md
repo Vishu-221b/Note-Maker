@@ -1,10 +1,12 @@
 
 # 1. Sidebar Component
-* notes={notes}
-* currentNote={currentNote}
-* setCurrentNoteId={setCurrentNoteId}
-* newNote={createNewNote}
-* deleteNote={deleteNote}
+* notes={notes} notes is an array of notes that has been created and will be mapped to show every note on sidebar
+* currentNote={currentNote}: It is also a function which is used to find out current note id  to setup css styles with it.
+* setCurrentNoteId={setCurrentNoteId}: This is a lso a fnction used to set a particular note to set as current note.
+* newNote={createNewNote}: It is a function defined to create a new note.
+* deleteNote={deleteNote}: It is a function defined to delete a note.
+
+  
 
 ## a) function Sidebar(props) 
 ### {const noteElements = props.notes.map((note, index) => ()
@@ -17,17 +19,38 @@
 
 ## b) div
                 
-* className={`title ${note.id === props.currentNote.id ? "selected-note" : ""}`}
-* onClick={() => props.setCurrentNoteId(note.id)}>
-* h4, {note.body.split("\n")[0]}
-* button onClick={(event) => props.deleteNote(event, note.id)}>
+* className={`title ${note.id === props.currentNote.id ? "selected-note" : ""}`}: We are setting the classname of the div to the only selected note div, so that we can highlight that note.
+
+* onClick={() => props.setCurrentNoteId(note.id)}> : We are running a function here that we on clicking the note, will set the current note again.
+
+  
+* h4, {note.body.split("\n")[0]} : Split divides the whole string into an array of lines and it accesses the first [0] element to show.
+* button onClick={(event) => props.deleteNote(event, note.id)}>: Function used to delete a note.
 * <i></i>
 </button>
 
 
 
 ## c) Return ()
-  * button,onClick: ={props.newNote}
+* {props.newNote} : is a function which is getting accesses by props as argument provided in the sidebar component.
+* newNote={createNewNote} this is the prop mentioned in the app.js sidebar component
+* CreateNewNote is a function which will create a new note if clicked on the button + on sidebar.
+* function createNewNote() {
+        const newNote = {
+            id: nanoid(),
+            body: "# Type your markdown note's title here"
+        }
+        setNotes(prevNotes => [newNote, ...prevNotes])
+        setCurrentNoteId(newNote.id)
+    }
+This is the whole function.
+
+
+
+
+
+
+
 
 
 # 2. Editor Component
