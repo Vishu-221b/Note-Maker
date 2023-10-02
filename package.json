@@ -1,6 +1,7 @@
 {
   "name": "note-app",
   "private": true,
+  "homepage": "http://{Vishu-221b}.github.io/{Note-Maker}",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
