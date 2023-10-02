@@ -48,11 +48,6 @@ This is the whole function.
 
 
 
-
-
-
-
-
 # 2. Editor Component
 * currentNoteId && notes.length :
 * currentNote={currentNote} : 
@@ -60,32 +55,49 @@ This is the whole function.
 
 
 ## 2.1) Imports: 
+
 * ReactMde from "react-mde": ReactMde is a React Markdown editor component, a simple yet powerful and extensible component that can be used to create rich Markdown editors in React applications.
 
 * Showdown from "showdown": Showdown is a JavaScript library that converts Markdown to HTML.
+* 
 
 ## 2.2) function Editor({ currentNote, updateNote }) 
    ### {const [selectedTab, setSelectedTab] = React.useState("write")
 
-   * currentNote:
-   * updateNote:
+   * currentNote: This is a prop we have passed to editor component from the app.js: currentNote: This prop likely represents the current note that the Editor component is meant to display or edit.
+     
+   * updateNote: This is the prop we have passes to editor from the app.js: This prop is likely a function that allows you to update the content of the note.
+     
    * [selectedTab, setSelectedTab]:
-   * "write":
+   * selectedTab is a piece of state that you're defining using the useState hook. This state variable will hold the current selected tab value.
+   * setSelectedTab is the function that allows you to update the selectedTab state.
+   * "write":you're initializing the selectedTab state with the initial value "write". This means that when your component is first rendered, selectedTab will be set to "write".
 
 ## 2.3)  converter = new Showdown.Converter({})
   * tables: true :
   * simplifiedAutoLink: true : 
   * strikethrough: true: 
   * tasklists: true:
+  * converter object you've created is configured to handle these specific Markdown features and convert them into their corresponding HTML representations. You can use this converter to parse Markdown text and generate HTML content with these features applied.
 
-## 2.4) Return ReactMde
-* value={currentNote.body} : 
-* onChange={updateNote} : 
-* selectedTab={selectedTab} : 
-* onTabChange={setSelectedTab} : 
-* generateMarkdownPreview={(markdown) => Promise.resolve(converter.makeHtml(markdown))} : 
-* minEditorHeight={80} : 
-* heightUnits="vh" :
+  * 
+
+## 2.4) Return ReactMde : We return a REACTMDE editor inside a section, This ReactMde contains props and values such as:
+* value={currentNote.body} : value is used to specify the current value or content of the editor, currentNote.body likely contains the Markdown content that you want to display and edit within the ReactMde component.
+
+* onChange={updateNote} : onChange is a callback function that will be called whenever the content of the editor is changed.,
+  updateNote is likely a function that updates the currentNote object with the new content. This function is called when the user edits the Markdown content in the editor.
+  
+* selectedTab={selectedTab} : selectedTab is used to determine which tab is currently selected within the ReactMde component.,based on the state value you've defined earlier (const [selectedTab, setSelectedTab] = React.useState("write")). It controls whether the user is in the "write" or another tab.
+  
+* onTabChange={setSelectedTab} : onTabChange is a callback function that is called when the user switches between tabs in the ReactMde component., setSelectedTab is used to update the selectedTab state when the user changes tabs.
+  
+* generateMarkdownPreview={(markdown) => Promise.resolve(converter.makeHtml(markdown))} : generateMarkdownPreview is a function that generates a preview of the Markdown content in real-time as the user types.
+It takes the user's Markdown text as input (markdown) and uses the converter object (which we discussed earlier) to convert this Markdown into HTML.
+The result of this conversion is returned as a Promise, which is then used to display the HTML preview of the Markdown content.
+
+* minEditorHeight={80} :These props control the minimum height of the editor and specify that it should be measured in viewport height units (vh). 
+* heightUnits="vh" :These props control the minimum height of the editor and specify that it should be measured in viewport height units (vh).
 
 
 # 3. App.js
