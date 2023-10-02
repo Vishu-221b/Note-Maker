@@ -56,8 +56,8 @@ We would like to thank the React JS community for their valuable resources and d
 ## Author
 
 - Your Name
-- GitHub: [Your GitHub Profile](https://github.com/your-github-profile)
-- Email: [your.email@example.com]
+- GitHub: [Vishu-221b](https://github.com/vishu-221b)
+- Email: [hellovishu221b@gmail.com]
 
 ## Acknowledgments
 
