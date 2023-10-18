@@ -2,7 +2,7 @@
 
 ## Description
 
-The Notes App is a modern web application built with React JS, designed to help you easily manage and organize your notes. It provides a user-friendly interface for creating, editing and organizing your notes efficiently.
+NoteFlow is a web-based dynamic note-taking application built using React, designed to enhance the user's note creation and management experience. The project seamlessly combines user-friendly features and technology to facilitate efficient note-taking and preservation. Local Storage is employed to manage data persistence and retrieval.
 
 ## Demo
 
@@ -17,9 +17,7 @@ You can try out a live demo of this project [here](https://notes-by-vishu.netlif
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Credits](#credits)
+- [Key Features](#Key-Features)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -30,7 +28,7 @@ To run this project locally, follow these steps:
 1. Clone this repository.
 2. Navigate to the project directory.
 3. Run `npm install` to install dependencies.
-4. Run `npm start` to start the development server.
+4. Run `npm run dev` to start the development server.
 
 ## Usage
 
@@ -38,28 +36,13 @@ To run this project locally, follow these steps:
 - Edit and update existing notes.
 - Organize your notes efficiently.
 
-## Contributing
 
-We welcome contributions to make the Notes App even better. Here's how you can contribute:
 
-- Submit bug reports or feature requests by opening an issue.
-- Fork the repository, make changes, and submit a pull request for review.
+## Developer
 
-## License
-
-This project is licensed under the [MIT License](LICENSE.md) - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Credits
-
-We would like to thank the React JS community for their valuable resources and documentation.
-
-## Author
-
-- Your Name
+- VIshwajeet SIngh
 - GitHub: [Vishu-221b](https://github.com/vishu-221b)
 - Email: [hellovishu221b@gmail.com]
 
-## Acknowledgments
 
-Special thanks to our contributors and everyone who supported this project.
 
