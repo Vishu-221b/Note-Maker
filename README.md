@@ -1,5 +1,4 @@
-# Notes App
-
+# Noteflow
 ## Description
 
 NoteFlow is a web-based dynamic note-taking application built using React, designed to enhance the user's note creation and management experience. The project seamlessly combines user-friendly features and technology to facilitate efficient note-taking and preservation. Local Storage is employed to manage data persistence and retrieval.
