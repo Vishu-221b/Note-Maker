@@ -1,0 +1,34 @@
+.react-mde {
+    background-color: rgb(29, 217, 250);
+    border:none;
+}
+
+
+.react-mde textarea {
+    background-color: rgb(62, 66, 66);
+    color:white;
+}
+
+
+.mde-header {
+    background-color: rgb(62, 66, 66);
+}
+
+
+.mde-tabs > button{
+color:white;
+}
+
+.mde-tabs > .mde-header-group {
+    color:white;
+}
+
+.svg-icon {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: inherit;
+    overflow: visible;
+    vertical-align: -0.125em;
+    color:white;
+}
