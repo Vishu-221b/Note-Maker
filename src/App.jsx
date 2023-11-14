@@ -1,7 +1,7 @@
 import "./style.css"
 import React from "react"
-import Sidebar from "./components/Sidebar"
-import Editor from "./components/Editor"
+import Sidebar from "./components/sidebar"
+import Editor from "./components/editor"
 import Split from "react-split"
 import { nanoid } from "nanoid"
 
@@ -15,7 +15,7 @@ export default function App() {
     
     const currentNote = 
         notes.find(note => note.id === currentNoteId) 
-        || notes[0]
+        || notes[0] ;
 
     React.useEffect(() => {
         localStorage.setItem("notes", JSON.stringify(notes))
@@ -84,7 +84,7 @@ export default function App() {
                             className="first-note"
                             onClick={createNewNote}
                         >
-                            Create one now hehe
+                            Create one now
                 </button>
                     </div>
 

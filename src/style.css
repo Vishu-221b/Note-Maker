@@ -21,6 +21,7 @@ button:focus {
 .pane {
     overflow-y: auto;
     /* padding: 10px; */
+
 }
 
 .sidebar {
@@ -28,9 +29,6 @@ button:focus {
     height: 100vh;
 }
 
-.sidebar--note {
-    /* display: flex; */
-}
 
 .sidebar--header {
     display: flex;
@@ -54,13 +52,15 @@ button:focus {
 
 .first-note {
     cursor: pointer;
-    background-color: #4A4E74;
+    background-color: #404bac;
     border: none;
     color: white;
     border-radius: 3px;
     padding: 1rem;
 }
-
+.first-note:hover {
+    background-color: #3f4792;
+}
 .editor {
     width: 80%;
     height: 100vh;
@@ -136,7 +136,12 @@ button:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: rgb(55, 55, 56);
+}
+
+.no-notes > h1 {
+    color:#eee;
+    font-size: 2rem;
 }
 
 .delete-btn {
