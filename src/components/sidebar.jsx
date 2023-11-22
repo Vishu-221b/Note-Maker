@@ -18,9 +18,17 @@ export default function Sidebar(props) {
         </div>
     ))
 
+    function darkMode() {
+        const hehe = document.getElementsByClassName("mde-header");
+        for (let i = 0; i < hehe.length; i++) {
+            hehe[i].style.backgroundColor = "red";
+        }
+     }
+
     return (
         <section className="pane sidebar">
             <div className="sidebar--header">
+
                 <h3>Notes</h3>
                 <button className="new-note" onClick={props.newNote}>+</button>
             </div>
