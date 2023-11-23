@@ -5,7 +5,7 @@ NoteFlow is a web-based dynamic note-taking application built using React, desig
 
 ## Demo
 
-You can try out a live demo of this project [here](https://notes-by-vishu.netlify.app/).
+You can try out a live demo of this project [here](https://noteflow-1.netlify.app/).
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <img src="https://raw.githubusercontent.com/Vishu-221b/Note-Maker/main/Screenshot%20(350).png" style="width: 48%; max-height: 225px;" alt="Notes App">
     <img src="https://raw.githubusercontent.com/Vishu-221b/Note-Maker/main/Screenshot%20(351).png" style="width: 48%; max-height: 225px;" alt="Notes App">
